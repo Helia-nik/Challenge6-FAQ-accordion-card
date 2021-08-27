@@ -23,7 +23,6 @@ body{
     background-repeat: no-repeat;
     justify-content: space-between;
     border-radius: 20px;
-    overflow:hidden;
 }
 .pic{
     position: relative;
@@ -38,7 +37,7 @@ body{
 .text{
     width: 50%;
     padding: 40px;
-    max-height: 420px;
+   
 }
 .list{
     list-style: none;
@@ -100,7 +99,7 @@ h5:hover{
 @media only screen and (max-width: 990px){
     .container{
         flex-direction: column;
-        height: auto;
+        height: auto !important;
         width: 65%;
         background-image:  url(./images/bg-pattern-mobile.svg);
         background-position:  top center;
@@ -131,5 +130,10 @@ h5:hover{
     }
     .question.active + .answer{
         height: 50px;
+    }
+}
+@media only screen and (min-width: 991px){
+    .text{
+        overflow: hidden;
     }
 }
